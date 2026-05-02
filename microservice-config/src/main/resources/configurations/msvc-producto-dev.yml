@@ -1,0 +1,23 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: msvc-producto
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/perfulandia_db
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update #Actualizará automaticamente la estructura de las tablas segun entidades java.
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  instance:
+    hostname: localhost #Indica que se ejecute en mi maquina local.
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka #indica donde se encuentra el servidor Eureka.

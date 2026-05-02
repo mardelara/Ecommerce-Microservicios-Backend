@@ -1,0 +1,11 @@
+.claude/
+target/
+.settings/
+.classpath
+.project
+.vscode/
+.mvn/
+target/
+target/
+.vscode/
+.claude/
